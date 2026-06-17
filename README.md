@@ -36,7 +36,7 @@ The **Sampling Interval** (in pixels) controls the density of the refined mesh:
 - A **smaller value** (e.g., 10) produces a denser mesh with finer triangles, better aligned to semantic boundaries.
 - A **larger value** (e.g., 25) produces a coarser mesh with fewer triangles.
 
-![image-20260617094324225](C:\Users\realj\AppData\Roaming\Typora\typora-user-images\image-20260617094324225.png)
+![Sampling Interval](1.png)
 
 > ⚠️ **Special case**: If the interval is set to **less than 3 pixels**, the uniform sampling is **disabled**, and only **Edge‑Guided (EG) refinement** is applied — i.e., texture edges are used as constraints, but no additional vertices are inserted to regularize triangle shapes.
 
@@ -50,7 +50,7 @@ The tool supports three sampling strategies to generate spatially uniform vertic
 | **Rectangular Grid**            | Generates a grid aligned with the triangle's bounding box. | Scenes where rectangular patterns are prevalent (e.g., buildings). |
 | **Poisson Disk Sampling**       | Generates a blue‑noise distribution of vertices.           | Scenes requiring more stochastic, less structured sampling.  |
 
-![image-20260617094344925](C:\Users\realj\AppData\Roaming\Typora\typora-user-images\image-20260617094344925.png)
+![Sampling Modes](2.png)
 
 > 📌 **Our paper adopts the Equilateral Triangular Grid** for its superior regularity and stable feature aggregation in downstream segmentation tasks.
 
@@ -65,7 +65,7 @@ The tool will:
 
 Upon completion, you will see a success message:
 
-![image-20260617094356002](C:\Users\realj\AppData\Roaming\Typora\typora-user-images\image-20260617094356002.png)
+![Refinement Complete](3.png)
 
 The refined mesh is saved to your specified output path and can be opened in any 3D viewer (e.g., MeshLab, CloudCompare).
 
