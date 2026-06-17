@@ -78,3 +78,16 @@ We provide a small demo dataset (`DemoData.zip`) to test the tool. It includes:
 - `ground_truth.png` – semantic annotations (for reference)
 
 You can download `DemoData.zip` from the Releases page, extract it, and follow the steps above.
+
+## 🗂️ Full Dataset on Hugging Face
+
+The complete dataset used in our paper — including all mesh variants (EG, SU, EGU, and classical refinement methods) — is publicly available on **Hugging Face**:
+
+👉 **[https://huggingface.co/datasets/jyy0815/3D_Meshes_Variants_Dataset](https://huggingface.co/datasets/jyy0815/3D_Meshes_Variants_Dataset)**
+
+The dataset contains:
+
+- **SUM‑Parts** – large‑scale urban textured meshes with 21 semantic classes
+- **SFH (Saihanba Forest Hotel)** – UAV‑acquired scene with 16 semantic classes
+- Multiple mesh variants generated with different sampling intervals (10, 15, 20, 25 pixels)
+- Pixel‑level semantic annotations for evaluation
