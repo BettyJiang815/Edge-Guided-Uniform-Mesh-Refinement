@@ -1,4 +1,4 @@
-# README
+<img width="825" height="207" alt="1" src="https://github.com/user-attachments/assets/c1a04e10-4616-445b-b241-e926a0add228" /># README
 
 # Edge‑Guided Uniform (EGU) Mesh Refinement Tool
 
